@@ -2,4 +2,8 @@
 
 import UIKit
 
-var str = "Hello, playground"
+println("List:\n1\t🍎\n2\t🍌\n6\t🍊")
+
+// \t = new tab
+// \n = new line
+
