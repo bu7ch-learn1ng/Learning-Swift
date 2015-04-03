@@ -2,7 +2,7 @@
 
 import UIKit
 
-var str = "Hello "
+var str : String = "Hello "
 
 let modernProgrammingLanguage = "Swift" //Constant
 
