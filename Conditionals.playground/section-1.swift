@@ -17,4 +17,28 @@ for card in cards {
     }
 }
 
+println()
 
+for card in cards {
+    switch card {
+    case 11:
+        println("Jack")
+    case 12:
+        println("Queen")
+    case 13:
+        println("King")
+    default:
+        println(card)
+    }
+}
+
+println()
+
+for card in cards {
+    switch card {
+    case 1,11...13:
+        println("Trump Cards")
+    default:
+        println(card)
+    }
+}
