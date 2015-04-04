@@ -26,7 +26,7 @@ func weekdayOrWeekend(dayOfWeek: Day) -> String {
     switch dayOfWeek {
         
         case .Monday, .Tuesday, .Wednesday, .Thursday, .Friday:
-            return "It's a Week Day"
+            return "It's a Week Day!"
         case .Saturday, .Sunday:
             return "It's the weekend"
         default:
