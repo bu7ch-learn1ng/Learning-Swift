@@ -64,6 +64,20 @@ if let culprit = findApt("101")?.toInt() {
 
 
 
+func isDivisible(#number1: Int, #number2: Int) -> Bool? {
+    if number1 % number2 == 0 {
+        return true
+    } else {
+        return nil
+    }
+}
+
+if let result = isDivisible(number1: 15, number2: 4) {
+    println("These numbers are divisible")
+    
+} else {
+    println("Not Divisible")
+}
 
 
 
