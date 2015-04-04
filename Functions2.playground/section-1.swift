@@ -14,7 +14,7 @@ calculcateArea(height: 1000,width: 1200)
 //Tuples
 
 
-func searchNames (#name: String) -> (Bool, String) {
+func searchNames (#name: String) -> (found: Bool, description: String) {
     let names = ["Conrad","Steph","James", "Michael"]
     
     var found = (false, "\(name) is not a listed individual")
@@ -28,7 +28,12 @@ func searchNames (#name: String) -> (Bool, String) {
 }
 
 
+let (found,description) = searchNames(name: "Conrad")
+
+found
+description
+
 let result = searchNames(name: "Conrad")
 
-result.0
-result.1
+result.found
+result.description
