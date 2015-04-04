@@ -41,6 +41,10 @@ result.description
 
 //Optionals - which apt has violated rental agreement + send notice
 
+func sendNoticeTo(#aptNumber: Int) {
+    
+}
+
 func findApt (aptNumber : String ) -> String? {
     let aptNumbers = ["101", "202", "303","404"]
     for tempAptNumber in aptNumbers {
@@ -51,11 +55,10 @@ func findApt (aptNumber : String ) -> String? {
     return nil
 }
 
+//Optional chaining
 
-if let culprit = findApt("502") {
-    println("Apt Found!")
-} else {
-    println("Apartment Not found")
+if let culprit = findApt("101")?.toInt() {
+        sendNoticeTo(aptNumber: culprit)
 }
 
 
